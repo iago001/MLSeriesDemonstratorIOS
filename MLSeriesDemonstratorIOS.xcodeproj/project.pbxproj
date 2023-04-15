@@ -3,17 +3,46 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B41D6D8D29A9D4BD00D5ACF8 /* FaceDetectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D6D8C29A9D4BD00D5ACF8 /* FaceDetectorViewModel.swift */; };
+		B41D6D9129A9DA3800D5ACF8 /* FaceDetectionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D6D9029A9DA3800D5ACF8 /* FaceDetectionWorker.swift */; };
+		B41D6D9329A9E37600D5ACF8 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D6D9229A9E37600D5ACF8 /* ImageUtils.swift */; };
+		B41D6D9829AA6D6C00D5ACF8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D6D9729AA6D6C00D5ACF8 /* HomeView.swift */; };
+		B41D6D9C29AA729100D5ACF8 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D6D9B29AA729100D5ACF8 /* Camera.swift */; };
+		B41E146F29AB331400F77284 /* ImageClassificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41E146E29AB331400F77284 /* ImageClassificationViewModel.swift */; };
+		B41E147129AB4DA400F77284 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41E147029AB4DA400F77284 /* BaseViewModel.swift */; };
+		B41E147329AB4DFC00F77284 /* BaseWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41E147229AB4DFC00F77284 /* BaseWorker.swift */; };
+		B4786C7929AC87B9000AB89E /* ObjectDetectionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4786C7829AC87B9000AB89E /* ObjectDetectionWorker.swift */; };
+		B497F32429D7E3520082FA6E /* FlowerIdentificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B497F32329D7E3520082FA6E /* FlowerIdentificationViewModel.swift */; };
+		B497F32729D7F4CD0082FA6E /* FaceRecognitionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B497F32629D7F4CD0082FA6E /* FaceRecognitionWorker.swift */; };
+		B497F32929D855940082FA6E /* FaceRecognitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B497F32829D855940082FA6E /* FaceRecognitionView.swift */; };
+		B497F32B29D855CA0082FA6E /* FaceRecognitionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B497F32A29D855CA0082FA6E /* FaceRecognitionViewModel.swift */; };
+		B49E417A29AB011C008ABF32 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E417929AB011C008ABF32 /* ImagePicker.swift */; };
+		B49E417C29AB2A23008ABF32 /* UIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E417B29AB2A23008ABF32 /* UIUtilities.swift */; };
+		B49E418129AB3016008ABF32 /* ImageClassificationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E418029AB3016008ABF32 /* ImageClassificationWorker.swift */; };
+		B4DAE44629AC8C1A00FC78C0 /* ObjectDetectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAE44529AC8C1A00FC78C0 /* ObjectDetectionViewModel.swift */; };
+		B4DAE44829AC8CD100FC78C0 /* CommonPhotoVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAE44729AC8CD100FC78C0 /* CommonPhotoVideoView.swift */; };
+		B4DAE45429B4485E00FC78C0 /* yamnet_classification.tflite in Resources */ = {isa = PBXBuildFile; fileRef = B4DAE44A29B4485B00FC78C0 /* yamnet_classification.tflite */; };
+		B4DAE45529B4485E00FC78C0 /* my_birds_model.tflite in Resources */ = {isa = PBXBuildFile; fileRef = B4DAE44B29B4485C00FC78C0 /* my_birds_model.tflite */; };
+		B4DAE45629B4485E00FC78C0 /* model_flowers.tflite in Resources */ = {isa = PBXBuildFile; fileRef = B4DAE44C29B4485C00FC78C0 /* model_flowers.tflite */; };
+		B4DAE45729B4485E00FC78C0 /* model_spam.tflite in Resources */ = {isa = PBXBuildFile; fileRef = B4DAE44D29B4485D00FC78C0 /* model_spam.tflite */; };
+		B4DAE45829B4485E00FC78C0 /* labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = B4DAE44E29B4485D00FC78C0 /* labels.txt */; };
+		B4DAE45929B4485E00FC78C0 /* model_lite_age_q.tflite in Resources */ = {isa = PBXBuildFile; fileRef = B4DAE44F29B4485D00FC78C0 /* model_lite_age_q.tflite */; };
+		B4DAE45A29B4485E00FC78C0 /* labelmap.txt in Resources */ = {isa = PBXBuildFile; fileRef = B4DAE45029B4485D00FC78C0 /* labelmap.txt */; };
+		B4DAE45B29B4485E00FC78C0 /* mobile_face_net.tflite in Resources */ = {isa = PBXBuildFile; fileRef = B4DAE45129B4485E00FC78C0 /* mobile_face_net.tflite */; };
+		B4DAE45C29B4485E00FC78C0 /* vocab.txt in Resources */ = {isa = PBXBuildFile; fileRef = B4DAE45229B4485E00FC78C0 /* vocab.txt */; };
+		B4DAE45D29B4485E00FC78C0 /* model_lite_gender_q.tflite in Resources */ = {isa = PBXBuildFile; fileRef = B4DAE45329B4485E00FC78C0 /* model_lite_gender_q.tflite */; };
+		B4DAE46029B4491400FC78C0 /* FlowerIdentificationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAE45F29B4491400FC78C0 /* FlowerIdentificationWorker.swift */; };
 		B4FDF35B29A9C25F0084B359 /* MLSeriesDemonstratorIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FDF35A29A9C25F0084B359 /* MLSeriesDemonstratorIOSApp.swift */; };
-		B4FDF35D29A9C25F0084B359 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FDF35C29A9C25F0084B359 /* ContentView.swift */; };
 		B4FDF35F29A9C2600084B359 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4FDF35E29A9C2600084B359 /* Assets.xcassets */; };
 		B4FDF36229A9C2600084B359 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4FDF36129A9C2600084B359 /* Preview Assets.xcassets */; };
 		B4FDF36C29A9C2610084B359 /* MLSeriesDemonstratorIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FDF36B29A9C2610084B359 /* MLSeriesDemonstratorIOSTests.swift */; };
 		B4FDF37629A9C2610084B359 /* MLSeriesDemonstratorIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FDF37529A9C2610084B359 /* MLSeriesDemonstratorIOSUITests.swift */; };
 		B4FDF37829A9C2610084B359 /* MLSeriesDemonstratorIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FDF37729A9C2610084B359 /* MLSeriesDemonstratorIOSUITestsLaunchTests.swift */; };
+		B4FDF38529A9C7620084B359 /* UlPkX.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B4FDF38429A9C7620084B359 /* UlPkX.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +63,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B41D6D8C29A9D4BD00D5ACF8 /* FaceDetectorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetectorViewModel.swift; sourceTree = "<group>"; };
+		B41D6D9029A9DA3800D5ACF8 /* FaceDetectionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceDetectionWorker.swift; sourceTree = "<group>"; };
+		B41D6D9229A9E37600D5ACF8 /* ImageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
+		B41D6D9729AA6D6C00D5ACF8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B41D6D9B29AA729100D5ACF8 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		B41D6D9D29AA828500D5ACF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B41E146E29AB331400F77284 /* ImageClassificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationViewModel.swift; sourceTree = "<group>"; };
+		B41E147029AB4DA400F77284 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		B41E147229AB4DFC00F77284 /* BaseWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWorker.swift; sourceTree = "<group>"; };
+		B4786C7829AC87B9000AB89E /* ObjectDetectionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionWorker.swift; sourceTree = "<group>"; };
+		B497F32329D7E3520082FA6E /* FlowerIdentificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerIdentificationViewModel.swift; sourceTree = "<group>"; };
+		B497F32629D7F4CD0082FA6E /* FaceRecognitionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceRecognitionWorker.swift; sourceTree = "<group>"; };
+		B497F32829D855940082FA6E /* FaceRecognitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceRecognitionView.swift; sourceTree = "<group>"; };
+		B497F32A29D855CA0082FA6E /* FaceRecognitionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceRecognitionViewModel.swift; sourceTree = "<group>"; };
+		B49E417929AB011C008ABF32 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		B49E417B29AB2A23008ABF32 /* UIUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtilities.swift; sourceTree = "<group>"; };
+		B49E418029AB3016008ABF32 /* ImageClassificationWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationWorker.swift; sourceTree = "<group>"; };
+		B4DAE44529AC8C1A00FC78C0 /* ObjectDetectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionViewModel.swift; sourceTree = "<group>"; };
+		B4DAE44729AC8CD100FC78C0 /* CommonPhotoVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonPhotoVideoView.swift; sourceTree = "<group>"; };
+		B4DAE44A29B4485B00FC78C0 /* yamnet_classification.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = yamnet_classification.tflite; sourceTree = "<group>"; };
+		B4DAE44B29B4485C00FC78C0 /* my_birds_model.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = my_birds_model.tflite; sourceTree = "<group>"; };
+		B4DAE44C29B4485C00FC78C0 /* model_flowers.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = model_flowers.tflite; sourceTree = "<group>"; };
+		B4DAE44D29B4485D00FC78C0 /* model_spam.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = model_spam.tflite; sourceTree = "<group>"; };
+		B4DAE44E29B4485D00FC78C0 /* labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = labels.txt; sourceTree = "<group>"; };
+		B4DAE44F29B4485D00FC78C0 /* model_lite_age_q.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = model_lite_age_q.tflite; sourceTree = "<group>"; };
+		B4DAE45029B4485D00FC78C0 /* labelmap.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = labelmap.txt; sourceTree = "<group>"; };
+		B4DAE45129B4485E00FC78C0 /* mobile_face_net.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mobile_face_net.tflite; sourceTree = "<group>"; };
+		B4DAE45229B4485E00FC78C0 /* vocab.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vocab.txt; sourceTree = "<group>"; };
+		B4DAE45329B4485E00FC78C0 /* model_lite_gender_q.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = model_lite_gender_q.tflite; sourceTree = "<group>"; };
+		B4DAE45F29B4491400FC78C0 /* FlowerIdentificationWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerIdentificationWorker.swift; sourceTree = "<group>"; };
 		B4FDF35729A9C25F0084B359 /* MLSeriesDemonstratorIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLSeriesDemonstratorIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4FDF35A29A9C25F0084B359 /* MLSeriesDemonstratorIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLSeriesDemonstratorIOSApp.swift; sourceTree = "<group>"; };
-		B4FDF35C29A9C25F0084B359 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B4FDF35E29A9C2600084B359 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4FDF36129A9C2600084B359 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B4FDF36729A9C2610084B359 /* MLSeriesDemonstratorIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLSeriesDemonstratorIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +102,7 @@
 		B4FDF37129A9C2610084B359 /* MLSeriesDemonstratorIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLSeriesDemonstratorIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4FDF37529A9C2610084B359 /* MLSeriesDemonstratorIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLSeriesDemonstratorIOSUITests.swift; sourceTree = "<group>"; };
 		B4FDF37729A9C2610084B359 /* MLSeriesDemonstratorIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLSeriesDemonstratorIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B4FDF38429A9C7620084B359 /* UlPkX.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UlPkX.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +130,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B238BB5D43C093BE28E19F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B41D6D9629AA6D4C00D5ACF8 /* FaceDetector */ = {
+			isa = PBXGroup;
+			children = (
+				B41D6D8C29A9D4BD00D5ACF8 /* FaceDetectorViewModel.swift */,
+				B41D6D9029A9DA3800D5ACF8 /* FaceDetectionWorker.swift */,
+			);
+			path = FaceDetector;
+			sourceTree = "<group>";
+		};
+		B4786C7529AC871F000AB89E /* ObjectDetectionWithClassification */ = {
+			isa = PBXGroup;
+			children = (
+				B4786C7829AC87B9000AB89E /* ObjectDetectionWorker.swift */,
+				B4DAE44529AC8C1A00FC78C0 /* ObjectDetectionViewModel.swift */,
+			);
+			path = ObjectDetectionWithClassification;
+			sourceTree = "<group>";
+		};
+		B497F32529D7F4850082FA6E /* FaceRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				B497F32629D7F4CD0082FA6E /* FaceRecognitionWorker.swift */,
+				B497F32829D855940082FA6E /* FaceRecognitionView.swift */,
+				B497F32A29D855CA0082FA6E /* FaceRecognitionViewModel.swift */,
+			);
+			path = FaceRecognition;
+			sourceTree = "<group>";
+		};
+		B49E417D29AB2F73008ABF32 /* ImageClassification */ = {
+			isa = PBXGroup;
+			children = (
+				B49E418029AB3016008ABF32 /* ImageClassificationWorker.swift */,
+				B41E146E29AB331400F77284 /* ImageClassificationViewModel.swift */,
+			);
+			path = ImageClassification;
+			sourceTree = "<group>";
+		};
+		B4DAE44929B4478700FC78C0 /* ML_Models */ = {
+			isa = PBXGroup;
+			children = (
+				B4DAE45029B4485D00FC78C0 /* labelmap.txt */,
+				B4DAE44E29B4485D00FC78C0 /* labels.txt */,
+				B4DAE45129B4485E00FC78C0 /* mobile_face_net.tflite */,
+				B4DAE44C29B4485C00FC78C0 /* model_flowers.tflite */,
+				B4DAE44F29B4485D00FC78C0 /* model_lite_age_q.tflite */,
+				B4DAE45329B4485E00FC78C0 /* model_lite_gender_q.tflite */,
+				B4DAE44D29B4485D00FC78C0 /* model_spam.tflite */,
+				B4DAE44B29B4485C00FC78C0 /* my_birds_model.tflite */,
+				B4DAE45229B4485E00FC78C0 /* vocab.txt */,
+				B4DAE44A29B4485B00FC78C0 /* yamnet_classification.tflite */,
+			);
+			path = ML_Models;
+			sourceTree = "<group>";
+		};
+		B4DAE45E29B448EF00FC78C0 /* FlowerIdentification */ = {
+			isa = PBXGroup;
+			children = (
+				B4DAE45F29B4491400FC78C0 /* FlowerIdentificationWorker.swift */,
+				B497F32329D7E3520082FA6E /* FlowerIdentificationViewModel.swift */,
+			);
+			path = FlowerIdentification;
+			sourceTree = "<group>";
+		};
 		B4FDF34E29A9C25F0084B359 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +207,7 @@
 				B4FDF36A29A9C2610084B359 /* MLSeriesDemonstratorIOSTests */,
 				B4FDF37429A9C2610084B359 /* MLSeriesDemonstratorIOSUITests */,
 				B4FDF35829A9C25F0084B359 /* Products */,
+				0B238BB5D43C093BE28E19F4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,10 +224,25 @@
 		B4FDF35929A9C25F0084B359 /* MLSeriesDemonstratorIOS */ = {
 			isa = PBXGroup;
 			children = (
+				B4DAE44929B4478700FC78C0 /* ML_Models */,
+				B41D6D9D29AA828500D5ACF8 /* Info.plist */,
+				B4786C7529AC871F000AB89E /* ObjectDetectionWithClassification */,
+				B49E417D29AB2F73008ABF32 /* ImageClassification */,
+				B4DAE45E29B448EF00FC78C0 /* FlowerIdentification */,
+				B41D6D9629AA6D4C00D5ACF8 /* FaceDetector */,
+				B497F32529D7F4850082FA6E /* FaceRecognition */,
 				B4FDF35A29A9C25F0084B359 /* MLSeriesDemonstratorIOSApp.swift */,
-				B4FDF35C29A9C25F0084B359 /* ContentView.swift */,
 				B4FDF35E29A9C2600084B359 /* Assets.xcassets */,
+				B4FDF38429A9C7620084B359 /* UlPkX.jpeg */,
 				B4FDF36029A9C2600084B359 /* Preview Content */,
+				B41D6D9229A9E37600D5ACF8 /* ImageUtils.swift */,
+				B41D6D9729AA6D6C00D5ACF8 /* HomeView.swift */,
+				B41D6D9B29AA729100D5ACF8 /* Camera.swift */,
+				B49E417929AB011C008ABF32 /* ImagePicker.swift */,
+				B49E417B29AB2A23008ABF32 /* UIUtilities.swift */,
+				B41E147029AB4DA400F77284 /* BaseViewModel.swift */,
+				B41E147229AB4DFC00F77284 /* BaseWorker.swift */,
+				B4DAE44729AC8CD100FC78C0 /* CommonPhotoVideoView.swift */,
 			);
 			path = MLSeriesDemonstratorIOS;
 			sourceTree = "<group>";
@@ -207,7 +352,7 @@
 				};
 			};
 			buildConfigurationList = B4FDF35229A9C25F0084B359 /* Build configuration list for PBXProject "MLSeriesDemonstratorIOS" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -231,8 +376,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4DAE45929B4485E00FC78C0 /* model_lite_age_q.tflite in Resources */,
+				B4DAE45B29B4485E00FC78C0 /* mobile_face_net.tflite in Resources */,
+				B4DAE45529B4485E00FC78C0 /* my_birds_model.tflite in Resources */,
+				B4DAE45729B4485E00FC78C0 /* model_spam.tflite in Resources */,
 				B4FDF36229A9C2600084B359 /* Preview Assets.xcassets in Resources */,
+				B4DAE45A29B4485E00FC78C0 /* labelmap.txt in Resources */,
+				B4DAE45C29B4485E00FC78C0 /* vocab.txt in Resources */,
+				B4DAE45829B4485E00FC78C0 /* labels.txt in Resources */,
+				B4DAE45629B4485E00FC78C0 /* model_flowers.tflite in Resources */,
+				B4DAE45D29B4485E00FC78C0 /* model_lite_gender_q.tflite in Resources */,
 				B4FDF35F29A9C2600084B359 /* Assets.xcassets in Resources */,
+				B4FDF38529A9C7620084B359 /* UlPkX.jpeg in Resources */,
+				B4DAE45429B4485E00FC78C0 /* yamnet_classification.tflite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +413,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4FDF35D29A9C25F0084B359 /* ContentView.swift in Sources */,
+				B41D6D9C29AA729100D5ACF8 /* Camera.swift in Sources */,
+				B41D6D9129A9DA3800D5ACF8 /* FaceDetectionWorker.swift in Sources */,
+				B497F32729D7F4CD0082FA6E /* FaceRecognitionWorker.swift in Sources */,
+				B49E417A29AB011C008ABF32 /* ImagePicker.swift in Sources */,
+				B41D6D8D29A9D4BD00D5ACF8 /* FaceDetectorViewModel.swift in Sources */,
+				B41E146F29AB331400F77284 /* ImageClassificationViewModel.swift in Sources */,
+				B4786C7929AC87B9000AB89E /* ObjectDetectionWorker.swift in Sources */,
+				B4DAE44629AC8C1A00FC78C0 /* ObjectDetectionViewModel.swift in Sources */,
+				B41E147129AB4DA400F77284 /* BaseViewModel.swift in Sources */,
+				B497F32B29D855CA0082FA6E /* FaceRecognitionViewModel.swift in Sources */,
+				B41E147329AB4DFC00F77284 /* BaseWorker.swift in Sources */,
+				B41D6D9829AA6D6C00D5ACF8 /* HomeView.swift in Sources */,
+				B41D6D9329A9E37600D5ACF8 /* ImageUtils.swift in Sources */,
+				B497F32429D7E3520082FA6E /* FlowerIdentificationViewModel.swift in Sources */,
+				B49E418129AB3016008ABF32 /* ImageClassificationWorker.swift in Sources */,
+				B4DAE46029B4491400FC78C0 /* FlowerIdentificationWorker.swift in Sources */,
+				B497F32929D855940082FA6E /* FaceRecognitionView.swift in Sources */,
+				B49E417C29AB2A23008ABF32 /* UIUtilities.swift in Sources */,
+				B4DAE44829AC8CD100FC78C0 /* CommonPhotoVideoView.swift in Sources */,
 				B4FDF35B29A9C25F0084B359 /* MLSeriesDemonstratorIOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,13 +591,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MLSeriesDemonstratorIOS/Preview Content\"";
+				DEVELOPMENT_TEAM = AQSBAVG7MN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MLSeriesDemonstratorIOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ML Series Demonstrator";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -431,6 +610,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iago.MLSeriesDemonstratorIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,13 +627,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MLSeriesDemonstratorIOS/Preview Content\"";
+				DEVELOPMENT_TEAM = AQSBAVG7MN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MLSeriesDemonstratorIOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ML Series Demonstrator";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +646,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iago.MLSeriesDemonstratorIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
